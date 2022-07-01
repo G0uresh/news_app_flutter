@@ -1,6 +1,6 @@
 # news_app
 
-A NEWS project will show headlines and details.
+News App developed with Flutter and API from News API
 
 ## Getting Started
 
