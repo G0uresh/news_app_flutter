@@ -1,0 +1,24 @@
+stages:
+  - quality
+  - build
+  - test
+  
+code_quality:
+  stage: quality
+  only: 
+    - merge_requests
+  before_script: 
+    - flutter --version
+  script:
+    - flutter analyze
+tags: 
+  - non-prod_news_app_deployement 
+
+test:
+  stage: test
+  script:
+    - flutter test --no-test-assets
+tags: 
+  - non-prod_news_app_deployement
+
+  
