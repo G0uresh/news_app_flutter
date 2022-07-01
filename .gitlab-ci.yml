@@ -12,15 +12,11 @@ code_quality:
   script:
     - flutter packages pub get
     - flutter analyze
-tags: 
-  - non-prod_news_app_deployement 
 
 test:
   stage: test
   script:
     - flutter packages pub get
     - flutter test --no-test-assets
-tags: 
-  - non-prod_news_app_deployement
 
   
