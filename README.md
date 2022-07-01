@@ -1,4 +1,4 @@
-# news_app
+# NEWS Application
 
 News App developed with Flutter and API from News API
 
