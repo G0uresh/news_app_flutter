@@ -10,6 +10,7 @@ code_quality:
   before_script: 
     - flutter --version
   script:
+    - flutter packages pub get
     - flutter analyze
 tags: 
   - non-prod_news_app_deployement 
@@ -17,6 +18,7 @@ tags:
 test:
   stage: test
   script:
+    - flutter packages pub get
     - flutter test --no-test-assets
 tags: 
   - non-prod_news_app_deployement
