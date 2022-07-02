@@ -24,12 +24,6 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 [comment]: <> (https://user-images.githubusercontent.com/25320909/177009262-bcbbb9f1-2c72-413b-a3a9-da6208c554dd.mov)
 
 
-## Pull Requests
-I welcome and encourage all pull requests.
-
-## Created & Maintained By
-[Gouresh Ghadi](https://github.com/G0uresh) 
-
 ## References
 * [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 * [Reso Coder](https://resocoder.com/2019/08/27/flutter-tdd-clean-architecture-course-1-explanation-project-structure/)
@@ -39,3 +33,9 @@ I welcome and encourage all pull requests.
  * Generate API key from <a href="https://newsapi.org/">News api</a>
  * Paste the key in NewsEndPoints file
  * Rebuild app
+
+## Pull Requests
+I welcome and encourage all pull requests.
+
+## Created & Maintained By
+[Gouresh Ghadi](https://github.com/G0uresh) 
