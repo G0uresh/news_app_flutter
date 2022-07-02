@@ -6,9 +6,6 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 
 ## Todos
 - [x] Sound null safety
-- [x] News Home page
-- [x] Display news detail
-- [x] Fetch news from api
 - [x] Bloc pattern
 - [x] Clean Architecture
 - [x] Offline Mode
