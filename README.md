@@ -13,7 +13,7 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 - [x] Clean Architecture
 - [x] Offline Mode
 - [x] Continuous Integration (CI) with Github Actions
-- [] Beautiful UI with Dual themes ie. Light Theme and Dark Theme.
+- [ ] Beautiful UI with Dual themes ie. Light Theme and Dark Theme.
 
 ### Clean Architecture for Flutter : 
 
