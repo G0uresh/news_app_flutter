@@ -33,4 +33,4 @@ LoggerUtil _myLogger = LoggerUtil(
   ),
 );
 
-LoggerUtil LOG = _myLogger;
+LoggerUtil log = _myLogger;

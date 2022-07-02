@@ -1,4 +1,5 @@
 import 'package:hive/hive.dart';
+import 'package:news_app/common/logger/logger_util.dart';
 
 abstract class BaseLocalDatasource<TableType>{
 
@@ -21,13 +22,13 @@ abstract class BaseLocalDatasource<TableType>{
   }
 
   Future<void> put(String key, TableType value) async {
-    print('[LocalDatasource] put $value on $TableType');
+    log.info('[LocalDatasource] put $value on $TableType');
     final Box<TableType> box = await _openBox();
     await box.put(key, value);
   }
 
   Future<void> putAll(Map<String, TableType> items) async {
-    print('[LocalDatasource] putAll $items on $TableType');
+    log.info('[LocalDatasource] putAll $items on $TableType');
     final Box<TableType> box = await _openBox();
     await box.putAll(items);
   }
@@ -39,11 +40,11 @@ abstract class BaseLocalDatasource<TableType>{
 
   Future<void> deleteAll() async {
     try {
-      print('[LocalDatasource] Deleting all entries on $TableType');
+      log.info('[LocalDatasource] Deleting all entries on $TableType');
       final Box<TableType> box = await _openBox();
       await box.clear();
     } catch (e) {
-      print(
+      log.info(
           '[LocalDatasource] exception $e thrown '
               'when deleting all entries on $TableType');
       rethrow;
