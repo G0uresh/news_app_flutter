@@ -1,3 +1,4 @@
+import 'package:news_app/common/logger/logger_util.dart';
 import 'package:news_app/common/utils/database_util.dart';
 import 'package:news_app/data/datasources/local/base_local_datasource.dart';
 import 'package:news_app/data/datasources/local/constants/local_datasource_boxname_constants.dart';
@@ -25,7 +26,7 @@ class NewsLocalDatasource
         await putAll(coinsTransactionMap);
       }
     } catch (error) {
-      print('error occured while inserting');
+      log.info('error occured while inserting');
     }
   }
 
@@ -35,11 +36,11 @@ class NewsLocalDatasource
           await getAll();
       return articlesList
               ?.map((articleDetails) =>
-          HeadlinesNewsArticleDetailsModel.fromTable(articleDetails))
+                  HeadlinesNewsArticleDetailsModel.fromTable(articleDetails))
               .toList() ??
           [];
     } catch (error) {
-      print(
+      log.info(
         'Error while getting articles',
       );
       return [];
