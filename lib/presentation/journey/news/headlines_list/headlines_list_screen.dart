@@ -4,7 +4,6 @@ import 'package:news_app/common/injector/injection_container.dart';
 import 'package:news_app/common/theme/theme_color.dart';
 import 'package:news_app/common/theme/theme_text.dart';
 import 'package:news_app/presentation/journey/news/headlines_list/bloc/bloc.dart';
-import 'package:news_app/presentation/journey/news/headlines_list/bloc/headlines_news_bloc.dart';
 import 'package:news_app/presentation/journey/news/headlines_list/headlines_list_constants.dart';
 import 'package:news_app/presentation/journey/news/headlines_list/widgets/headline_item_widget.dart';
 import 'package:news_app/presentation/journey/news/headlines_list/widgets/headlines_list_body.dart';

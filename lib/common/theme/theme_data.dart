@@ -15,7 +15,7 @@ ThemeData appTheme(BuildContext context) {
       ),
     ),
     scaffoldBackgroundColor: AppColor.white,
-    appBarTheme: AppBarTheme(color: AppColor.white, elevation: 0.0),
+    appBarTheme: const AppBarTheme(color: AppColor.white, elevation: 0.0),
     toggleableActiveColor: AppColor.primaryColor,
   );
 }
