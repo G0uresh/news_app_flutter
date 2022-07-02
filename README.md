@@ -17,7 +17,7 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 
 ### Clean Architecture for Flutter : 
 
-![Uploading clean_architecture.png…]()
+<img src="./screenshots/clean_architecture.png" style="width: 60%;"/>
 
 ### Screenshots
 
