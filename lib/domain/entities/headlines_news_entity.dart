@@ -3,12 +3,12 @@ import 'package:hive/hive.dart';
 class HeadlinesNewsEntity {
   final String status;
   final int totalResults;
-  final List<HeadlinesNewsArticleDetailsEntity?>? articles;
+  final List<HeadlinesNewsArticleDetailsEntity?>? articlesList;
 
   HeadlinesNewsEntity({
     required this.status,
     required this.totalResults,
-    required this.articles,
+    required this.articlesList,
   });
 }
 

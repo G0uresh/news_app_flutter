@@ -10,7 +10,7 @@ class HeadlinesNewsModel extends  HeadlinesNewsEntity {
     required String status,
     required int totalResults,
     required this.articles,
-  }) : super(status : status, totalResults : totalResults , articles: articles) ;
+  }) : super(status : status, totalResults : totalResults , articlesList: articles) ;
 
   factory HeadlinesNewsModel.fromJson(Map<String, dynamic> json) {
     List list = json['articles'];

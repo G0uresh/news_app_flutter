@@ -28,7 +28,7 @@ class HeadlinesNewsBloc extends Bloc<HeadlinesNewsEvent, HeadlinesNewsState> {
     yield LoadingHeadlinesNewsState();
     final HeadlinesNewsEntity headlines =
         await newsUseCase.getHeadlinesNews('all');
-    yield LoadedHeadlinesNewsState(articles: headlines.articles);
+    yield LoadedHeadlinesNewsState(articles: headlines.articlesList);
   }
 
   Stream<HeadlinesNewsState> _mapLoadMoreHeadlinesNewsEventToState(

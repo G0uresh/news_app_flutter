@@ -1,47 +1,42 @@
 import 'package:dio/dio.dart';
+import 'package:news_app/common/logger/logger_util.dart';
 
 class DioLoggingInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     super.onRequest(options, handler);
 
-    print(
-        "--> ${options.method != null ? options.method.toUpperCase() : 'METHOD'} ${"" + (options.baseUrl) + (options.path)}");
-    print('Headers:');
-    options.headers.forEach((k, v) => print('$k: $v'));
-    if (options.queryParameters != null) {
-      print('queryParameters:');
-      options.queryParameters.forEach((k, v) => print('$k: $v'));
-    }
+    LOG.info(
+        "--> ${options.method.toUpperCase()} ${"" + (options.baseUrl) + (options.path)}");
+    LOG.info('Headers:');
+    options.headers.forEach((k, v) => LOG.info('$k: $v'));
+    LOG.info('queryParameters:');
+    options.queryParameters.forEach((k, v) => LOG.info('$k: $v'));
     if (options.data != null) {
-      print('Body: ${options.data}');
+      LOG.info('Body: ${options.data}');
     }
-    print(
-        "--> END ${options.method != null ? options.method.toUpperCase() : 'METHOD'}");
-
+    LOG.info("--> END ${options.method.toUpperCase()}");
   }
 
   @override
   void onResponse(Response response, ResponseInterceptorHandler handler) {
     super.onResponse(response, handler);
 
-    print(
+    LOG.info(
         "<-- ${response.statusMessage} ${response.requestOptions.baseUrl}");
-    print('Headers:');
-    response.headers.forEach((k, v) => print('$k: $v'));
-    print('Response: ${response.data}');
-    print('<-- END HTTP');
+    LOG.info('Headers:');
+    response.headers.forEach((k, v) => LOG.info('$k: $v'));
+    LOG.info('Response: ${response.data}');
+    LOG.info('<-- END HTTP');
   }
 
   @override
-  void onError(DioError dioError, ErrorInterceptorHandler handler) {
-    print(
-        "<-- ${dioError.message} ${dioError.response?.requestOptions.baseUrl}");
-    print(
-        "${dioError.response != null ? dioError.response?.requestOptions.data : 'Unknown Error'}");
-    print('<-- End error');
+  void onError(DioError err, ErrorInterceptorHandler handler) {
+    LOG.info("<-- ${err.message} ${err.response?.requestOptions.baseUrl}");
+    LOG.info(
+        "${err.response != null ? err.response?.requestOptions.data : 'Unknown Error'}");
+    LOG.info('<-- End error');
 
-    super.onError(dioError, handler);
-
+    super.onError(err, handler);
   }
 }
