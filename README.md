@@ -21,7 +21,7 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 
 ### Screenshots
 
-https://user-images.githubusercontent.com/25320909/177009262-bcbbb9f1-2c72-413b-a3a9-da6208c554dd.mov
+[comment]: <> (https://user-images.githubusercontent.com/25320909/177009262-bcbbb9f1-2c72-413b-a3a9-da6208c554dd.mov)
 
 
 ## Pull Requests
