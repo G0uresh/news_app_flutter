@@ -18,8 +18,7 @@ A News App built with Flutter and implemented **clean architecture**. In this ap
 
 ### Screenshots
 
-https://user-images.githubusercontent.com/25320909/177009262-bcbbb9f1-2c72-413b-a3a9-da6208c554dd.mov
-
+https://user-images.githubusercontent.com/25320909/177031370-f3b80bb8-f740-49ab-b0f9-908f14c3aafc.mov
 
 ## References
 * [The Clean Code Blog](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
